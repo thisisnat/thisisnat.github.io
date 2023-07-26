@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>image-test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>image-test</title>
+<style>
+
+body {
+	margin: 0; 
+	background-color: #240b3c;
+	padding: 32px 32px 0 32px;
+}
+
+h2 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.Belt {
+	width: 100%;
+	position: relative;
+	overflow: scroll;
+	margin-bottom: 64px;
+}
+
+.Belt--portrait {
+	height: 505px;
+}
+
+.Belt--landscape {
+	height: 160px;
+}
+
+@media (max-width: 500px) {
+	.Belt--portrait {
+		height: 236px;
+	}
+
+	.Belt--landscape {
+		height: 98px;
+	}
+}
+
+.Belt-scroll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	height: 100%;
+}
+
+.Belt-image {
+	height: 100%;
+	width: auto;
+	font-size: 0;
+	margin-right: 16px;
+	border-radius: 6px 32px 32px 32px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.Belt-image img {
+	height: 100%;
+	width: auto;
+}
+
+</style>
 </head>
 <body>
-	<p>img here</p>
+
+	<h2>Portrait belt</h2>
+
+	<div class="Belt Belt--portrait">
+
+		<div class="Belt-scroll">
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/portrait-tile-blow-up.jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+
+	<h2>Landscape belt</h2>
+
+	<div class="Belt Belt--landscape">
+
+		<div class="Belt-scroll">
+			<div class="Belt-image">
+				<img src="assets/show-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-blow-up.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-tracked.jpg" alt="">
+			</div>
+
+			<div class="Belt-image">
+				<img src="assets/show-tile-blow-up.jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+
 </body>
 </html>
